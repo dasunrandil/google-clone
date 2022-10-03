@@ -1,0 +1,45 @@
+@import url(reset.css);
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header>a{
+    display: block;
+    color: rgba(0, 0, 0, .87);
+    font-size: 13px;
+    line-height: 24px;
+}
+
+#apps>svg{
+    width: 24px;
+    height: 24px;
+    fill: #5f6368;
+}
