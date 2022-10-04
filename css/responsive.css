@@ -15,3 +15,11 @@
         padding: 10px;
     }
 }
+
+@media all and (max-height: 500px){
+    footer{
+        margin-top: 20px;
+        position: relative;
+    }
+    /* optimizing for mobile phone */
+}

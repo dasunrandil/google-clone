@@ -1,0 +1,13 @@
+
+temp3 should be a ul
+
+for(let elm of temp3.querySelectorAll('li')){
+    const text = elm.querySelector('a>span').innerText;
+    const href = elm.querySelector('a').href;
+    const e = elm.querySelector('a span');
+    const size = (window.getComputedStyle(e).backgroundSize);
+    const pos = (window.getComputedStyle(e).backgroundPosition);
+    console.log(`<div><a href="${href}">
+        <div class="icon" style="background-position: ${pos}"></div>
+        <div>${text}</div>
+</a></div>`);
